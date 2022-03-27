@@ -22,7 +22,7 @@ public class Estado {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "est_id")
-	private int id;
+	private Long id;
 	
 	@Column(name = "est_nombre")
 	private String nombre;
