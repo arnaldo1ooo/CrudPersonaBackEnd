@@ -26,6 +26,12 @@ public class EstadoService implements EstadoRepository {
 		// TODO Auto-generated method stub
 		return estadoRepository.findAll();
 	}
+	
+	@Override
+	public List<Estado> findByPaisId(Long idPais) {
+		
+		return estadoRepository.findByPaisId(idPais);
+	}
 
 	@Override
 	public List<Estado> findAll(Sort sort) {
@@ -48,7 +54,7 @@ public class EstadoService implements EstadoRepository {
 	@Override
 	public void flush() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -66,19 +72,19 @@ public class EstadoService implements EstadoRepository {
 	@Override
 	public void deleteAllInBatch(Iterable<Estado> entities) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void deleteAllByIdInBatch(Iterable<Long> ids) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void deleteAllInBatch() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -138,31 +144,31 @@ public class EstadoService implements EstadoRepository {
 	@Override
 	public void deleteById(Long id) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void delete(Estado entity) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void deleteAllById(Iterable<? extends Long> ids) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void deleteAll(Iterable<? extends Estado> entities) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void deleteAll() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -194,5 +200,5 @@ public class EstadoService implements EstadoRepository {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 }
